@@ -26,11 +26,14 @@ On the code, I need to change the LED_BUILDIN to 13
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
 dely(1000)
+
 **c. What circuit element would you want to add to protect the board and external LED?**
 resistence
+
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 delay(15),0.015s
-**Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md**
+
+**e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 delay(2000)
 
 

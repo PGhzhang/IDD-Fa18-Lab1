@@ -13,7 +13,7 @@
 The color stripes are: red, red, black, black, brown.
 
 **b. What do you have to do to light your LED?**
-I have to press the pushbutton to light the LED.
+I have to press the pushbutton to close the circut, thus lighting up the LED.
 
 
 
@@ -25,7 +25,7 @@ I have to press the pushbutton to light the LED.
 On the code, I need to change the LED_BUILDIN to 13
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
-dely(1000)
+Change the dely(1000)
 
 **c. What circuit element would you want to add to protect the board and external LED?**
 resistence

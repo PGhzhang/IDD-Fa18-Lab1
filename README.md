@@ -1,6 +1,6 @@
 # IDD-Fa18-Lab1: Blink!
 
-**A lab report by John Q. Student**
+**A lab report by Hanyu Zhang**
 
 **Fork** this repository to get a template for Lab 1 for *Developing and Designing Interactive Devices* at Cornell Tech, Fall 2018. You should modify this `README.md` file to delete this paragraph and update below. As the lab asks:
 
@@ -15,9 +15,12 @@ We've copied the questions from the lab here. Answer them below!
 
 ## Part B. Manually Blink a LED
 
-**a. What color stripes are on a 100 Ohm resistor?**
- 
+**a. What color stripes are on a 220 Ohm resistor?**
+The color stripes are: red, red, black, black, brown.
+
 **b. What do you have to do to light your LED?**
+I have to press the pushbutton to light the LED.
+
 
 
 ## Part C. Blink a LED using Arduino
@@ -25,12 +28,16 @@ We've copied the questions from the lab here. Answer them below!
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
+On the code, I need to change the LED_BUILDIN to 13
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
-
+dely(1000)
 **c. What circuit element would you want to add to protect the board and external LED?**
- 
+resistence
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
+delay(15),0.015s
+**Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md**
+delay(2000)
 
 
 ### 2. Blink your LED
@@ -43,14 +50,16 @@ We've copied the questions from the lab here. Answer them below!
 ## Part D. Manually fade an LED
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
-
+yes
 
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+change the PWM pin to 11 by changing int led = 9 to int led =11
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
-
+digitalWrite set the pin to either high or low voltage, where high = 5v and low =5
+analogWrite() set the PMWpin to a oscilating value which has a pulse length based of the duty cycle specified as the second parameter.
 
 ## Part F. FRANKENLIGHT!!!
 

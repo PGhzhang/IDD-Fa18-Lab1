@@ -4,15 +4,17 @@
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
+![alt text](https://github.com/PGhzhang/IDD-Fa18-Lab1/blob/master/IMG_5890.jpg)
 
 
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 220 Ohm resistor?**
+
 The color stripes are: red, red, black, black, brown.
 
 **b. What do you have to do to light your LED?**
+
 I have to press the pushbutton to close the circut, thus lighting up the LED.
 
 
@@ -22,26 +24,31 @@ I have to press the pushbutton to close the circut, thus lighting up the LED.
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
-On the code, I need to change the LED_BUILDIN to 13
+
+On the code, I need to change every LED_BUILDIN to 13, which is the pin number where LED connected to.
 
 **b. What line(s) of code do you need to change to change the rate of blinking?**
-Change the dely(1000)
+
+In the loop function, change the parameter in delay() to to manipulate the rate of blinkding. For example, mine is delay(1000).
 
 **c. What circuit element would you want to add to protect the board and external LED?**
-resistence
+
+Add a resistence to protect the board and external LED.
 
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
-delay(15),0.015s
+
+When I change the code to delay(15), which is 0.015s, I can no longer perceive the LED blinking. To prove to myself that the LED is infact still blinking, I can use Burst Mode on iphone camera to taka a series of photos. If there's any phone in this set caught LED off, it would prove that the LED is still blinking.
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
-delay(2000)
+
+[link] https://github.com/PGhzhang/IDD-Fa18-Lab1/blob/master/Blink.ino
 
 
 ### 2. Blink your LED
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[link to your video here; feel free to upload to youtube and just paste in a link here]
+[![](http://img.youtube.com/vi/7ItRcAedLVQ/0.jpg)](http://www.youtube.com/watch?v=7ItRcAedLVQ "")
 
 
 ## Part D. Manually fade an LED

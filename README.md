@@ -56,7 +56,7 @@ When I change the code to delay(15), which is 0.015s, I can no longer perceive t
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
-Yes, the LED to glow the whole turning range of potentiometer。
+Yes, the LED to glow the whole turning range of potentiometer。The pot has three terminals. As I twist the knob, it moves the position of the third terminal, adjusting the resistence.
 
 
 

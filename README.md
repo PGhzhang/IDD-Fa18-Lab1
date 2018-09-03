@@ -56,7 +56,7 @@ When I change the code to delay(15), which is 0.015s, I can no longer perceive t
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
 
-Yes, I'm able to get the LED to glow the whole turning range of potentiometer。
+Yes, the LED to glow the whole turning range of potentiometer。
 
 
 
@@ -68,10 +68,13 @@ I have to change the PWM pin to 11 by changing int led = 9 to int led =11.
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
 
-digitalWrite set the pin to either high or low voltage, where high = 5v and low =5
-analogWrite() set the PMWpin to a oscilating value which has a pulse length based of the duty cycle specified as the second parameter.
+analogWrite() sets the PMWpin an analog value(PMW wave). The pin will generate a wave og specified duty cycle untill next call to analogWrite(). Thus, analogWrite() can be used to adjust the brightness of LED. 
+digitalWrite() sets the pin to high or low voltage, where high = 5V and low =0V.
 
+Source: 
 
+https://www.arduino.cc/reference/en/language/functions/analog-io/analogwrite/
+https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/
 
 ## Part F. FRANKENLIGHT!!!
 

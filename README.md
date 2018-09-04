@@ -110,6 +110,7 @@ I decided to put a LED starting from the old LED to ground. Since the circuts ar
 ### 3. Build your light!
 
 **Make a video showing off your Frankenlight.**
+
 Schematic is shown in above questions.
 [![](http://img.youtube.com/vi/AxaHmBj4HXc/0.jpg)](http://www.youtube.com/watch?v=AxaHmBj4HXc "")
 

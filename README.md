@@ -79,18 +79,27 @@ https://www.arduino.cc/reference/en/language/functions/digital-io/digitalwrite/
 ## Part F. FRANKENLIGHT!!!
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
+I took apart a wireless mouse. It's powered by a 1.5vv battery and the simplied schema is shown in the picture below:
+
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
+This is a microchip on the board, located next to an optical mouse sensor. I suspect that the microchip converts analog movement of hand into digital signals that can be sent to computer through bluetooth.
+
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
+There's an optical mouse sensor on device, which measures light relfected back up from the desk, and this value is then sent to computer through microchip. There are also three click buttons on top of the device. When user wants to click and select things on the computer, this action is cuaght by the clicking action sensed by these push buttons.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
+The wireless mouse is powered by a 1.5vv battery. Regulation of power is conducted by multuple resisters scatterd on the circut. 
 
 **d. Is information stored in your device? Where? How?**
+I don't think information is stored in anyplace in the mouse. The mouse only transmits siginal to computer. 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
 **Describe what you did here.**
+
+I decided to put a LED starting from the old LED to ground. Since the circuts around the optical sensor and microchips are complex, I chose to avoid those parts and implant the new LED between the exisitng LED to ground. Thus, current flow from the high voltage to ground. 
 
 ### 3. Build your light!
 
